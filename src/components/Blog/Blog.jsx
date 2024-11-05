@@ -3,10 +3,10 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Blog = () => {
   return (
-    <section className="bg-[#F0F0F0] py-[110px]">
+    <section className="bg-[#F0F0F0] md:py-[110px] py-[30px]">
       <div className="max-w-container mx-auto">
-        <div className="flex justify-between">
-          <div className="bg-blog1">
+        <div className="md:flex justify-between block">
+          <div className="bg-blog1 md:mb-0 mb-[20px]">
             <div className="bg-[#00000099] pl-[46px] pr-[44px] pt-[75px] pb-[55px]">
               <h3 className="font-bold text-white text-[24px] leading-[36px] w-[249px]">
                 lorem ipsum dolor sit amet consectetur adipiscing elit sed do
@@ -17,7 +17,7 @@ const Blog = () => {
               </button>
             </div>
           </div>
-          <div className="bg-blog2">
+          <div className="bg-blog2 md:mb-0 mb-[20px]">
             <div className="bg-[#00000099] pl-[46px] pr-[44px] pt-[75px] pb-[55px]">
               <h3 className="font-bold text-white text-[24px] leading-[36px] w-[249px]">
                 lorem ipsum dolor sit amet consectetur adipiscing elit sed do
@@ -28,7 +28,7 @@ const Blog = () => {
               </button>
             </div>
           </div>
-          <div className="bg-blog3">
+          <div className="bg-blog3 md:mb-0 mb-[20px]">
             <div className="bg-[#00000099] pl-[46px] pr-[44px] pt-[75px] pb-[55px]">
               <h3 className="font-bold text-white text-[24px] leading-[36px] w-[249px]">
                 lorem ipsum dolor sit amet consectetur adipiscing elit sed do
@@ -40,7 +40,7 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <a href="#" className="group pt-[30px] flex justify-end items-center text-base font-bold leading-[24px] text-black">MORE FROM THE BLLOG <IoIosArrowForward className="text-[20px] group-hover:rotate-[360deg] duration-500"></IoIosArrowForward></a>
+        <a href="#" className="group md:pt-[30px] pt-[10px] flex justify-end items-center md:text-base text-xs font-bold leading-[24px] text-black">MORE FROM THE BLLOG <IoIosArrowForward className="md:text-[20px] text-base group-hover:rotate-[360deg] duration-500"></IoIosArrowForward></a>
       </div>
     </section>
   );

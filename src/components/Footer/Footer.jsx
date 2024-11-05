@@ -11,10 +11,10 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1F1F1F] pt-[144px] pb-[170px]">
+    <footer className="bg-[#1F1F1F] md:pt-[144px] md:pb-[170px] py-[30px]">
       <div className="max-w-container mx-auto">
-        <div className="flex items-center">
-          <div className="w-[40%]">
+        <div className="md:flex items-center block w-[100%] md:ml-0 ml-[25%]">
+          <div className="md:w-[40%] w-full md:pb-0 pb-[30px]">
             <img src={logo} alt="logo" />
             <div className="flex items-center text-white text-sm pt-[33px] gap-[5px] ">
               <MdOutlineMarkEmailRead size={16} />
@@ -43,60 +43,66 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex w-[60%] justify-between">
-            <div>
-              <h2 className="text-white font-bold text-base pb-[21px]">
-                Company
-              </h2>
-              <ul className="text-white text-sm">
-                <li className="pb-[15px]">
-                  <a href="#">Home</a>
-                </li>
-                <li className="pb-[15px]">
-                  <a href="#">About</a>
-                </li>
-                <li className="pb-[15px]">
-                  <a href="#">Services</a>
-                </li>
-                <li className="pb-[15px]">
-                  <a href="#">Gallery</a>
-                </li>
-              </ul>
+          <div className="md:flex block md:w-[60%] justify-between w-full">
+            <div className="flex justify-between w-1/2">
+              <div>
+                <h2 className="text-white font-bold text-base pb-[21px]">
+                  Company
+                </h2>
+                <ul className="text-white text-sm">
+                  <li className="pb-[15px]">
+                    <a href="#">Home</a>
+                  </li>
+                  <li className="pb-[15px]">
+                    <a href="#">About</a>
+                  </li>
+                  <li className="pb-[15px]">
+                    <a href="#">Services</a>
+                  </li>
+                  <li className="pb-[15px]">
+                    <a href="#">Gallery</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 className="text-white font-bold text-base pb-[21px]">
+                  Others
+                </h2>
+                <ul className="text-white text-sm">
+                  <li className="pb-[15px]">
+                    <a href="#">Blog</a>
+                  </li>
+                  <li className="pb-[15px]">
+                    <a href="#">Contact</a>
+                  </li>
+                  <li className="pb-[15px]">
+                    <a href="#">Terms & Conditions</a>
+                  </li>
+                  <li className="pb-[15px]">
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <h2 className="text-white font-bold text-base pb-[21px]">
-                Others
-              </h2>
-              <ul className="text-white text-sm">
-                <li className="pb-[15px]">
-                  <a href="#">Blog</a>
-                </li>
-                <li className="pb-[15px]">
-                  <a href="#">Contact</a>
-                </li>
-                <li className="pb-[15px]">
-                  <a href="#">Terms & Conditions</a>
-                </li>
-                <li className="pb-[15px]">
-                  <a href="#">Privacy Policy</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h6 className="text-white font-bold text-base pb-[21px]">
-                Certificate
-              </h6>
-              <div className="flex gap-[5px]">
-                <div className="bg-white rounded-lg h-[44px] w-[110px] pl-[9px] content-center">
-                  <h3 className="text-2xl font-bold text-[#008AD8]">ISO 88</h3>
-                  <p className="text-[8px] font-medium text-[#008AD8]">
-                    Environmentally Safe
-                  </p>
-                </div>
-                <div className="bg-white rounded-lg content-center h-[44px] w-[110px] text-center">
-                  <p className="text-sm text-[#980076] font-bold">
-                    Liquid<span className="text-[#009818]">Green</span>
-                  </p>
+            <div className="w-1/2 md:flex justify-end md:mt-0 mt-5">
+              <div>
+                <h6 className="text-white font-bold text-base pb-[21px]">
+                  Certificate
+                </h6>
+                <div className="flex gap-[5px]">
+                  <div className="bg-white rounded-lg h-[44px] w-[110px] pl-[9px] content-center">
+                    <h3 className="text-2xl font-bold text-[#008AD8]">
+                      ISO 88
+                    </h3>
+                    <p className="text-[8px] font-medium text-[#008AD8]">
+                      Environmentally Safe
+                    </p>
+                  </div>
+                  <div className="bg-white rounded-lg content-center h-[44px] w-[110px] text-center">
+                    <p className="text-sm text-[#980076] font-bold">
+                      Liquid<span className="text-[#009818]">Green</span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -6,13 +6,17 @@ import client4 from "../../assets/client4.png";
 
 const Client = () => {
   return (
-    <section className="py-[117px] bg-white">
+    <section className="md:py-[117px] py-[30px] bg-white">
       <div className="max-w-container mx-auto">
         <div className="flex justify-between">
-          <img src={client1} alt="client1" />
-          <img src={client2} alt="client2" />
-          <img src={client3} alt="client3" />
-          <img src={client4} alt="client4" />
+          <div className="md:flex justify-between md:w-1/2">
+            <img src={client1} alt="client1" />
+            <img src={client2} alt="client2" />
+          </div>
+          <div className="md:flex justify-between md:w-1/2">
+            <img src={client3} alt="client3" />
+            <img src={client4} alt="client4" />
+          </div>
         </div>
       </div>
     </section>
